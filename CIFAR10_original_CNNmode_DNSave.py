@@ -1,5 +1,4 @@
-# 环境配置使用 cifar10 自建环境
-import torchvision  #准备阶段
+import torchvision  #准备阶段：pip install pytorch
 from torch.utils.data import DataLoader
 import torch
 from torch import nn
@@ -106,3 +105,4 @@ for i in range(epoch):
     writer.add_scalar('test_loss', total_testing_loss, total_testing_step)
     writer.add_scalar('test_accurancy', total_acc/test_data_size, total_testing_step)
     total_testing_step = total_testing_step + 1
+
